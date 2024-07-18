@@ -19,6 +19,7 @@ app.use(
   cors({
     origin: "https://mern-book-store-frontend-seven.vercel.app",
     methods: ["GET", "PUT", "POST", "DELETE"],
+    allowedHeaders: ["Content-Type"],
     credentials: true,
   })
 );
