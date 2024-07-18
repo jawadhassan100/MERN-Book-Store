@@ -7,7 +7,7 @@ const DeleteBook = () => {
    const navigate = useNavigate();
    const {id} = useParams()
    const handleDeleteBook = () =>{
-    axios.delete(`http://localhost:5500/books/${id}`)
+    axios.delete(`https://mern-book-store-delta.vercel.app//${id}`)
     .then(()=>{
       enqueueSnackbar("Book Created Successfully" , {variant: "success" , autoHideDuration:1000} )
       navigate("/")

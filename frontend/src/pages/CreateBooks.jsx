@@ -19,7 +19,7 @@ const CreateBooks = () => {
     }
 
    
-    axios.post("http://localhost:5500/books", data)
+    axios.post("https://mern-book-store-delta.vercel.app/", data)
    .then(()=>{
     enqueueSnackbar("Book Created Successfully" , {variant: "success"  , autoHideDuration:1000})
      navigate("/")

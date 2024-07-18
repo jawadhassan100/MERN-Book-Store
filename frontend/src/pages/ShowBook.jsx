@@ -11,7 +11,7 @@ const ShowBook = () => {
 
    useEffect(()=>{
       setLoadig(true);
-      axios.get(`http://localhost:5500/books/${id}`)
+      axios.get(`https://mern-book-store-delta.vercel.app//${id}`)
       .then((response)=>{
         setBooks(response.data)
         setLoadig(false)
