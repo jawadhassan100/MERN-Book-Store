@@ -34,7 +34,7 @@ const CreateBooks = () => {
     <div className="p-4">
         <BackButton/>
         <h1 className="text-3xl my-4">Create Book</h1>
-        <div className="flex flex-col border-2 border-sky-400 rounded-[5px] w-96 sm:w-full p-4 mx-auto">
+        <div className="flex flex-col border-2 border-sky-400 rounded-[5px] w-96 sm:w-48 p-4 mx-auto">
           <div className="my-4">
             <label className="text-xl mr-4 text-grey-500">Title :</label>
             <input
