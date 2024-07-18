@@ -6,11 +6,6 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ],
-  "headers": [
-    {
-      "for": "*",
-      "key": "Access-Control-Allow-Origin",
-      "value": "*"  
-    }]
+  ]
+
 }
