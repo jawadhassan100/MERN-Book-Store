@@ -12,7 +12,7 @@ const Home = () => {
   const [showType , setShowType] = useState("table");
   useEffect(()=>{
       setLoadig(true);
-      axios.get('https://mern-book-store-delta.vercel.app/books')
+      axios.get('https://mern-book-store-delta.vercel.app/books/')
       .then((response)=>{
         setBooks(response.data.data)
         console.log(response.data);
