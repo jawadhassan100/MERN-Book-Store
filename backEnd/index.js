@@ -11,13 +11,11 @@ const PORT = 5500;
 app.use(express.json());
 const dbURl = process.env.mongoDBURL;
 // middleware for handleing cors policy
-// option 1 allow all origins with default of cors(*)
-// app.use(cors());
 
 // option 2 allow custom origin
 app.use(
   cors({
-    origin: "https://mern-book-store-frontend-seven.vercel.app",
+    origin: "https://mern-book-store-frontend-seven.vercel.app/",
     methods: ["GET", "PUT", "POST", "DELETE"],
     credentials: true,
   })
